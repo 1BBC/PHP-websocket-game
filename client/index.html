@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snake</title>
+</head>
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .unit {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        background-color: green;
+        border: 3px solid black;
+        top: 0;
+        left: 0;
+    }
+
+</style>
+<body id="wrapper">
+
+<form>
+    <input type="text" name="room_id" placeholder="room id (default 1)">
+    <button id="connect">connect</button>
+</form>
+<!--<h1>Hallo</h1>-->
+<div class="unit" id="unit"></div>
+<script src="app.js"></script>
+</body>
+</html>
